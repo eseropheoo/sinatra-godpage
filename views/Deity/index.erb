@@ -1,0 +1,12 @@
+<h1>Welcome to the Thunder page</h1>
+   
+   <% @deity.each do |deity| %>
+	    <div>
+	        <!-- <h3> <a href="/<%= deity[:id] %>"> <%= deity[:image] %> </a> </h3> -->
+	       <a href="/<%= deity[:id] %>"> <img src="images/<%= deity[:image] %>" id = "deity" ></a>
+
+	        <p> <%= deity[:body] %> </p>
+
+	    </div>
+
+   <% end %>

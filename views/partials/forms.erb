@@ -1,0 +1,9 @@
+<form>
+    <label>Name</label>
+    <input type="text" name="title" value="<%= @deity[:title] if @deity %>">
+
+    <label>Info</label>
+    <input type="text" name="body" value="<%= @deity[:body] if @deity %>">
+
+    <input type="submit" value="submit">
+</form>
